@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "ScrollToll",
+  "description": "An extension to fight social media and porn addition while donating to charity.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
