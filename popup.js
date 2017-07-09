@@ -9,13 +9,13 @@ function buildPaymentTable(){
     var tableLength = 5;
     var displayThese = value.pastPayments;
     displayThese = displayThese.reverse().slice(0, tableLength);
-    for (var i = 0; i < displayThese.length - 1; i++) {
+    for (var i = 0; i < displayThese.length; i++) {
       var row = table.insertRow(i + 1);
       var cell0 = row.insertCell(0);
       var cell1 = row.insertCell(1);
       var cell2 = row.insertCell(2);
       cell0.innerHTML = displayThese[i][1];
-      cell1.innerHTML = '$5.00';
+      cell1.innerHTML = '$1.00';
       cell2.innerHTML = 'SFSafeHouse';
     }
   });
