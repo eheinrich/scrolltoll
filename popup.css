@@ -1,0 +1,29 @@
+body {
+    background-color: #e6e9ef;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+* {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 25px;
+}
+
+#status {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h2 {
+    line-height: 5px;
+    font-weight: bold;
+    font-size: 50px;
+}
