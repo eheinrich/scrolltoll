@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "ScrollToll",
-  "description": "An extension to fight social media and porn addition while donating to charity.",
+  "name": "Getting started example",
+  "description": "This extension shows a Google Image search result for the current page",
   "version": "1.0",
 
   "browser_action": {
@@ -10,6 +10,11 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "activeTab"
-  ]
+    "tabs",
+    "storage"
+  ],
+  "background":{
+    "scripts": ["eventpage.js"],
+    "persistent": false
+  }
 }

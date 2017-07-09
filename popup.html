@@ -10,14 +10,12 @@
     <style>
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        min-width: 350px;
         font-size: 100%;
       }
-      #status {
-        /* avoid an excessively wide status text */
-        white-space: pre;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-width: 400px;
+      #main{
+        display: table;
+        margin: auto;
       }
     </style>
 
@@ -27,11 +25,27 @@
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
-    <script src="popup.js"></script>
   </head>
+  <script src="popup.js"></script>
   <body>
-    <div id="status"></div>
-    <img id="image-result" hidden>
+    <div id="main">
+      <p>Wow! You've donated:</p>
+      <center><h2>$<span id="status"></span></h2></center>
+      <label for="charities">Current Charity: </label>
+      <select id="charities">
+        <option>SF SafeHouse</option>
+        <option>W.O.M.A.N. Inc.</option>
+        <option>Planned Parenthood</option>
+      </select>
+    </div>
+    <table id="payments">
+      <thead>
+        <caption>Recent donations</caption>
+        <tr><th>Date</th><th>Amt.</th><th>Charity</th></tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
   </body>
 </html>
 
