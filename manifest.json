@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
+  "name": "ScrollToll",
+  "description": "ScrollToll attempts to reduce social media usage by utilizing a browser extension that attaches a monetary value to page visits. While a small amount of use is fine, the moderate 50 cent charge quickly becomes prohibitive at high usage. It's like a digital swear jar where 100% of the funds are donated to women's charties!",
   "version": "1.0",
 
   "browser_action": {
