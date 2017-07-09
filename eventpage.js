@@ -21,7 +21,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
             chrome.storage.sync.get({viewCount: 0}, function(value){
                 var newCount = value.viewCount + 1;
                 chrome.storage.sync.set({viewCount: newCount});
-                if(newCount % 1 === 0){
+                if(newCount % 10 === 0){
                   makePayment();
                 }
             })
